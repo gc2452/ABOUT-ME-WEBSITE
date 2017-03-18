@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<center>
+<h1>Geraldine Cheung</h1>
+<h2><img src="http://i.imgur.com/t5pCVN6t.jpg"/></h2>
+<div class="education">
+  <p><b>EDUCATION</b><br />
+  <small>
+  <b>Barnard College, Columbia University, </b> New York, NY<br />
+  Bachelor of Arts May 2014 <b>Major:</b> Economics & Mathematics <b>GPA:</b> 3.50/4.00<br />
+  <b>Honors and Awards:</b> YMA Fashion Scholar (2014), Dean's List (2010-2013)<br />
+  <br />
+  <b>Columbia Business School,</b> New York, NY<br />
+  Special Concentration in Business Management, May 2014
+  </small>
+  </p>
+</div>
+
+<div class="experience1">
+  <p><b>EXPERIENCE</b><br />
+  <small>
+  <b>Macy's, Inc.,</b> New York, NY <br />
+  <i>Omni Assistant Buyer, Home Textiles</i> June 2013-Present<br />
+  - Responsible for Fashion Bedding business which generates annual sales of $150+ million <br />
+  - Analyze weekly sales and present to management action points to drive sales, margin, and turn <br />
+  - Develop and implement store visual execution and advertising strategy which led to a 4% increase in annual sales <br />
+  - Led a College Lifestyle competetive analysis presentation to influence management's back to college 2016 strategy <br />
+  - Collaborate with product development team to develop the Martha Stewart bedding assortment <br />
+  - Work closely with planning team to project sales/markdowns and flow receipts accordingly <br />
+  </small>
+  </p>
+</div>
+
+<div class="experience2">
+  <p><b>EXPERIENCE</b><br />
+  <small>
+    <b>Sony Music Entertainment,</b> New York, NY <br />
+  <i>Intern, Risk and Control Operations</i> May 2011-August 2012<br />
+  - Supported the assessment of key financial reports for external audit by updating Sarbanes-Oxley test status for 48 total controls<br />
+  - Created a proposal to address crisis team and general employee protocol for 4,000+ employees in the event of a crisis which was supported by Sony Music executives and adopted globally <br />
+  - Constructed 5 templates for crisis management training documents, from emergency guides to a crisis team list, used by Sony Music’s 44 regional offices to design their respective Crisis Management plans <br />
+  </small>
+  </p>
+</div>
+  
+<div class="interests">
+  <p><b>INTERESTS</b><br />
+  <small>
+  Adventure travel, photography, new technology, jet skiing, flyboarding, tennis <br />
+  (This is a picture that I took at Chapman's Peak in South Africa- just south of Cape Town. Many consider it the second most beautiful drive in the world, with the first being the Amalfi Coast in Italy.)
+  </small>
+  </p>
+</div>
+
+<div class="prince">
+  <p><b>MEET MY DOG</b><br />
+  <small>
+  Prince is a 2 year old Maltipoo living in New York. He loves short walks on the beach, treats, high-fives, and belly rubs! <br />
+  <img src="http://i.imgur.com/UMAIgYJ.png" width="10" height="10"/> <a href="http://www.instagram.com/princejesseee"> Follow Prince Adventures Here!</a><img src="http://i.imgur.com/UMAIgYJ.png" width="10" height="10"/>
+  </small>
+  </p>
+</div>
+<br />
+<br />
+<button>Let's Play a Game</button> <br />
+  <script>
+    $("button").on("click", function() {
+  var x = Math.floor(Math.random() * 100) + 1;
+  var turns = 10;
+  var hint = 'Guess my number, 1-100!';
+
+  while (turns > 0) {
+    var guess = prompt(hint +
+      ' You have ' + turns + ' guesses left.');
+    if (!guess) break;
+    guess = Number(guess);
+    if (guess == x) {
+      document.write('<p>YOU WIN!</p>' +
+      '<p><a href="index.html"> HOME</a></p>');
+      turns = 0;
+    } else {
+      hint = 'Nope.';
+      if (guess < x) hint += ' Too small!';
+      if (guess > x) hint += ' Too big!';
+      turns = turns - 1;
+    }
+  }
+  alert('The secret number was ' + x + '.');
+  });
+  </script>
+<br />
+<br /> 
+<a href="contact.html"> CONTACT</a>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+</center>
+</body>

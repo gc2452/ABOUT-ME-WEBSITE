@@ -1,0 +1,87 @@
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 223px;
+  width: 600px;
+  background-size: cover;
+  position: relative;
+  margin: 50px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 70px;
+  color: lightblue;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #cccccc;
+  margin: 0 0 0 0;
+}
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 5px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  width: 590px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  font-family: Arial;
+  font-size: 10px;
+  margin: 0 auto;
+  padding: 0px;
+}
+p1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.show-description p {
+  height: 300px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.education{
+  background-image: url("http://i.imgur.com/EYIhfzo.jpg");
+}
+.experience1{
+  background-image: url("http://i.imgur.com/7BxLpWV.jpg");
+}
+.experience2{
+  background-image: url("http://i.imgur.com/9uXmf51.jpg");
+}
+.interests{
+  background-image: url("http://i.imgur.com/XWE0xGS.jpg");
+}
+.prince{
+  background-image: url("http://i.imgur.com/ji1vqb6.jpg");
+}
+</style>
